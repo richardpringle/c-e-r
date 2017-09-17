@@ -33,9 +33,9 @@
 
       $.ajax({
         method: 'GET',
-        url: 'http://localhost:3000/api/flags',
+        url: 'http://c-e-r.pring.ca:3000/api/Flags?filter=%7B%22where%22%3A%7B%22type%22%3A%20%22gallery%22%7D%2C%20%22limit%22%3A%2010%7D',
         success: function(data) {
-          console.log(data);
+          // console.log(data);
           initFlags(data);
         }
       });
@@ -62,7 +62,7 @@
   </script>
 
   <script async defer
-    src="https://maps.googleapis.com/maps/api/js?AIzaSyAJ-utZOC5B34gk56h30SbTrEq14JoQyNQ&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRcSQawQpwyU5fKOBcQmvBpPCzJ1CYHXQ&callback=initMap">
   </script>
 
 </body>
